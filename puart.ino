@@ -172,7 +172,7 @@ void puart_server(PUART *item, Channel *channels, int len){
                 } else if(PUART_CMD_IS(CMD_GET_FTS)){//Serial.println("CMD_GET_FTS"); 
                     FOREACH_CHANNEL
                       if(channel->selected){
-                       SP(channel->id);SWDB;SP(channel->output.value);SWDB;SP(channel->output.state);SWDB;SP(channel->output.tm);SWDE;SF;
+                       SP(channel->id);SWDB;SP(channel->output.value);SWDB;SP(channel->output.tm);SWDB;SP(channel->output.state);SWDE;SF;
                    //SP(channel->id);SWDB;SP(27.18);SWDB;SP(1);SWDB;SP(millis());SWDE;SF;
                       }
                     }
